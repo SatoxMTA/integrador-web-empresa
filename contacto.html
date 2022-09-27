@@ -5,15 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            background-color: red;
-        }
-    </style>
 </head>
 <body>
-    <h1>Contacto</h1>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sed voluptatum aliquid odio nulla quaerat, eaque accusamus minima, iure ipsam hic minus veniam? Modi doloremque, voluptates illum sapiente molestias accusamus?</p>
-    
+    <header>
+        <a href="./index.html">
+            <img src="./img/placeholder.png" alt="Logo" height="40px">
+            <span>Empresa</span>
+        </a>
+        <a href="./index.html">
+            Volver
+        </a>
+    </header>
+
+    <main>
+        <h1> Contacto </h1>
+
+        <form action="" method="get">
+            <input type="hidden" name="token" value="adfasfd2184sdufjdodkokodajf9103jfas">
+
+            <fieldset>
+                <legend>
+                    Datos Personales
+                </legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" autofocus required placeholder="Ingrese su Nombre">
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" autocomplete required>
+
+                <label for="dni">Dni:</label>
+                <input type="number" name="dni" required>
+
+                
+                <label for="genero">Genero:</label>
+                <input type="radio" name="genero" value="m"> <span>Masculino</span>
+                <input type="radio" name="genero" value="f"> <span>Femenino</span>
+                <input type="radio" name="genero" value="o" checked> <span>Otro</span>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Otros
+                </legend>
+                
+                <label for="mascota">Tiene Mascota:</label>
+                <input type="checkbox" name="mascota" value="1">
+
+                <label for="proyecto">Seleccion los proyectos de su interes:</label>
+                <input type="checkbox" name="proyecto" value="Parque">
+                <input type="checkbox" name="proyecto" value="Casas">
+
+                <label for="proyecto">Adjunto su CV:</label>
+                <input type="file" name="curriculum" multiple>
+
+
+                <label for="texto">Texto</label>
+                <textarea name="texto" cols="30" rows="10"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Select
+                </legend>
+
+                <label for="">Marca del auto</label>
+                <select name="autos" required>
+                    <option value="">Seleccione una marca</option>
+                    <optgroup label="Ford">
+                        <option value="fordKa">Ford KA</option>
+                        <option value="fordFocus">Ford FOCUS</option>
+                    </optgroup>
+                    <optgroup label="Toyota">
+                        <option value="etios">Toyota Etios</option>
+                        <option value="corolla">Toyota Corolla</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <ul>
+                <li>
+                    <img src="./img/placeholder.png" alt="Logo" height="40px">
+                    <span> Item 1 </span>
+                </li>
+                <li>
+                    <img src="./img/placeholder.png" alt="Logo" height="40px">
+                    <span> Item 2 </span>
+                </li>
+                <li>
+                    <img src="./img/placeholder.png" alt="Logo" height="40px">
+                    <span> Item 3 </span>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26428.497334378477!2d-59.05929196482041!3d-34.10635512378977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb0b6a92357b4d%3A0x5f7d9ac7c145085d!2sZ%C3%A1rate%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1663891087207!5m2!1ses!2sar"
+                height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <img src="./img/placeholder.png" alt="Logo" height="40px">
+                    <span> Item 1 </span>
+                </li>
+                <li>
+                    <img src="./img/placeholder.png" alt="Logo" height="40px">
+                    <span> Item 2 </span>
+                </li>
+                <li>
+                    <img src="./img/placeholder.png" alt="Logo" height="40px">
+                    <span> Item 3 </span>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

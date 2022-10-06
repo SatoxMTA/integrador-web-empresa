@@ -1,0 +1,73 @@
+body {
+    margin: 0px;
+}
+
+/* HEADER */
+
+    header {
+        background-color: rgb(64, 61, 61);
+        color: aliceblue;
+        padding: 0.50em;
+        font-size: 1em;
+
+        position: fixed;
+        top: 0px;
+        width: calc(100% - 1em);
+        z-index: 1;
+    }
+
+    header img {
+        height: 1em;
+    }
+
+    a {
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    ul {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    ul li {
+        display: inline;
+    }
+
+    nav {
+        float: right;
+    }
+
+
+/* HOME */
+
+    #home {
+        margin-top: 2em;
+        min-height: 100vh;
+        background-image: url('./../img/notebook.avif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: aliceblue;
+
+        position: relative;
+    }
+
+    h1 {
+        margin: 0px;
+        font-size: 4em;
+
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #home > div {
+        width: 400px;
+
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+    }
+

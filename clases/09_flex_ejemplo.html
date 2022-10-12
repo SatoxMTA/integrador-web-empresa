@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+    <style>
+        body {
+            background-color: beige;
+            margin: 0px;
+        }
+
+        .container {
+            background-color: blueviolet;
+            height: 100vh;
+
+            display: flex;
+            flex-direction: row;
+        }
+
+        .item{
+            background-color: orange;
+        }
+
+        #item1 {
+            border-right: 1px solid black;
+            width: calc(30% - 1px);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #item1 p {
+            padding: 0 30px;
+        }
+
+        #item2 {
+            width: 70%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imagen-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+
+        .imagen-container img {
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="item1" class="item">
+            <h2> Titulo Seccion 30% </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure molestias vero dolores velit tenetur minima ratione, nesciunt tempora aliquid possimus aut, voluptatibus voluptates architecto praesentium consectetur, amet dolor aspernatur? </p>
+        </div>
+        <div id="item2" class="item">
+            <h2>Titulo Imagenes</h2>
+            <div class="imagen-container">
+                <img src="./../img/placeholder.png" alt="">
+                <img src="./../img/placeholder.png" alt="">
+                <img src="./../img/placeholder.png" alt="">
+                <img src="./../img/placeholder.png" alt="">
+                <img src="./../img/placeholder.png" alt="">
+                <img src="./../img/placeholder.png" alt="">
+                <img src="./../img/placeholder.png" alt="">
+                <img src="./../img/placeholder.png" alt="">
+                <img src="./../img/placeholder.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

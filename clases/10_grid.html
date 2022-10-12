@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            margin: 0px;
+        }
+
+        h1 {
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+
+            text-align: center;
+        }
+        .item {
+            border: 1px solid black;
+            background-color: rgb(103, 156, 231);
+        }
+        
+        .container-column {
+            border: 1px solid black;
+            background-color: blue;
+            padding: 20px;
+
+            
+            display: grid;
+            grid-template-rows: 40vh 40vh;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .container-column #item5 {
+            grid-column: 1 / span 3;
+        }
+
+        .container-row {
+            border: 1px solid black;
+            background-color: red;
+            padding: 20px;
+
+            
+            display: grid;
+            grid-template-rows: 40vh 40vh;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .container-row #item1 {
+            grid-row: 1 / span 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div id="item5" class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+
+    <div class="container-row">
+        <div  id="item1" class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </div>
+</body>
+</html>

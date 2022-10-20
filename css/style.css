@@ -71,3 +71,33 @@ body {
         right: 50px;
     }
 
+/* EQUIPO */
+
+    #equipo {
+        background-image: linear-gradient(to right, rgb(123, 23, 23), #445511, green, violet);
+        padding: 20px;
+    }
+
+    #equipo h2 {
+        text-align: center;
+    }
+
+    #equipo-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #equipo-container > div {
+        flex-basis: 200px;
+
+        border: 1px solid black;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #equipo-container > div > img {
+        max-width: 100%;
+    }
+

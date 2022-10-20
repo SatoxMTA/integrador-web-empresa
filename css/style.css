@@ -101,3 +101,60 @@ body {
         max-width: 100%;
     }
 
+
+/* CASOS DE EXTIO */
+    #casos-exito {
+        background-color: blanchedalmond;
+    }
+
+    .caso-exito {
+        border: 1px solid black;
+        padding-left: 15px;
+        width: 600px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+
+        position: relative;
+    }
+
+    .caso-exito img {
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 50%;
+
+        position: absolute;
+        bottom: -15px;
+        right: -15px;
+    }
+
+    #casos-exito h2 {
+        text-align: center;
+        margin: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .caso-exito-container {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    #casos-exito > div {
+        display: flex;
+        direction: row;
+    }
+
+    .imagenes-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+    }
+
+    .imagenes-container > img {
+        margin-bottom: 20px;
+    }

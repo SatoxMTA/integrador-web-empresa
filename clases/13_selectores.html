@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section>div {
+            border: 1px solid black;
+        }
+
+        h1~h2 {
+            color: red
+        }
+
+        p[class=azul] {
+            color: blue;
+        }
+
+        p[class~=azul] {
+            background: red;
+        }
+
+        p[class|=azul] {
+            background: green;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            background-color: green;
+        }
+
+        input:focus {
+            color: red;
+        }
+
+        li:nth-child(3) {
+            color: blue;
+        }
+
+        li:nth-last-child(2) {
+            color: green;
+        }
+
+        li:first-child {
+            color: red;
+        }
+
+        li:last-child {
+            color: blueviolet;
+        }
+
+        span:only-child {
+            color: blanchedalmond;
+        }
+
+        span:nth-of-type(3) {
+            color: blue;
+        }
+
+        span:nth-last-of-type(3) {
+            color: blue;
+        }
+
+        .azul {
+            background: blue;
+            height: 50px;
+        }
+
+        div:empty {
+            background: purple;
+
+        }
+
+        input:disabled {
+            color: red;
+        }
+
+        p::first-line {
+            color: purple;
+        }
+
+        p::first-letter {
+            color: red;
+        }
+
+        p::before {
+            content: 'Texto antes';
+        }
+
+        p::after {
+            content: 'final.';
+            color: aquamarine;
+        }
+
+        p::selection {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1> Uno </h1>
+        <h2> Dos </h2>
+        <h2> Tres </h2>
+    </div>
+
+    <p class="azul"> Azul </p>
+    <p class="rojo"> Rojo </p>
+    <p class="verde"> Verde </p>
+    <p> Sin estilo </p>
+    <p class="azul-claro"> Claro</p>
+
+    <section>
+        <h2> Titulo Seccion </h2>
+        <div>
+            <h3> Titulo Div </h3>
+            <p> texto </p>
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div>
+            <h3> Titulo Div </h3>
+            <p> texto </p>
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+    </section>
+
+    <a href="https://google.com.ar" target="_blank"> Google! </a>
+
+    <input type="text" disabled value="Eduardo Denis">
+
+    <ul>
+        <li> Pedro </li>
+        <li> Juan </li>
+        <li> Susana </li>
+        <li> Marcos </li>
+        <li> Rocio </li>
+        <li> Yesica </li>
+        <li> Maximiliano </li>
+    </ul>
+
+    <p>
+        <span> Soy hijo unico </span>
+    </p>
+    <p>
+        <span> yo tengo un </span>
+        <b> hermano!! <i> pero yo estoy solito </i> </b>
+    </p>
+
+    <p>
+        <span> Hola </span>
+        <span> Como </span>
+        <em> estan </em>
+        <span> ? </span>
+    </p>
+
+    <hr>
+
+    <div class="azul"></div>
+    <div class="azul">
+        Con contenido
+    </div>
+
+    <p>
+        Hola Mundo
+        <br>
+        Chau Mundo
+    </p>
+</body>
+
+</html>

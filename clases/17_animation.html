@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+
+        .animation {
+            animation-name: magico;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            animation-delay: 2s;
+            -o-animation-delay: 2s;
+        }
+
+        .animation:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes magico {
+            from {
+                margin-left: 0px;
+                background-color: antiquewhite;
+                border-radius: 0%;
+            }
+
+            25% {
+                margin-left: 250px;
+                background-color: brown;
+                border-radius: 17%;
+            }
+
+            50% {
+                margin-left: 500px;
+                border-radius: 35%;
+            }
+
+            to {
+                margin-left: 750px;
+                background-color: blueviolet;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container animation"></div>
+</body>
+
+</html>
